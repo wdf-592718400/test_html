@@ -1,5 +1,5 @@
-var url0 = "http://127.0.0.1:18093";
-//var url0 = "http://119.45.12.212:18093";
+//var url0 = "http://127.0.0.1:18093";
+var url0 = "http://119.45.12.212:18093";
 function setCookie(data){
 	$.cookie('key', data.key);
 	$.cookie('name', data.data[0].name);
