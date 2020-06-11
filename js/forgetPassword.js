@@ -7,8 +7,8 @@ function next(){
 	var params = {
 		"name": name,
 		"phone": phone
-	}
-	if(phone == "" || name == ""){alert("phone or name is empty!"); return;}
+	};
+	if(phone == "" || name == ""){alert("phone or name is empty!"); return 0;}
 	$.ajax({
 		type:"post",
 		url:url0 + "/users/forget/password",
@@ -16,7 +16,7 @@ function next(){
 		contentType: 'application/json;charset=UTF-8',
 		data: JSON.stringify(params),
 		success: function(res){
-			if(res.status == 0){alert("phone or name is wrong!"); return;}
+			if(res.status == 0){alert("phone or name is wrong!"); return 0;}
 			id = res.data[0].id;
 			$("#msg h1").text("reset password");
 			$("#password0 span").text("enter password:");
@@ -35,7 +35,7 @@ function reset(){
 	var params = {
 		"id": id,
 		"password": password0
-	}
+	};
 	if(password0 == "" || password1 == ""){alert("password is empty!"); return;}
 	if(password0 != password1){alert("two passwords are inconsistent!"); return;}
 	$.ajax({

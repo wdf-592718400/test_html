@@ -6,9 +6,9 @@ function signUp(){
 		"name": name,
 		"phone": phone,
 		"password": password
-	}
+	};
 	if(name == "" || phone == "" || password == ""){alert("name or phone or password is empty!"); return;}
-	
+
 	$.ajax({
 		type:"post",
 		url:url0 + "/users/insert",
@@ -22,7 +22,7 @@ function signUp(){
 			}
 			else{
 				alert("phone already registerde!");
-				return;
+				return 0;
 			}
 		}
 	});

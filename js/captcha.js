@@ -75,7 +75,7 @@
 
 	class jigsaw {
 		constructor(el, success, fail) {
-			this.el = el
+			this.el = el;
 			this.success = success
 			this.fail = fail
 		}

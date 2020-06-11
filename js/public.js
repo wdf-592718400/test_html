@@ -1,4 +1,4 @@
-//var url0 = "http://127.0.0.1:18093";
+// var url0 = "http://127.0.0.1:18093";
 var url0 = "http://119.45.12.212:18093";
 function setCookie(data){
 	$.cookie('key', data.key);
@@ -6,10 +6,10 @@ function setCookie(data){
 	$.cookie('phone', data.data[0].phone);
 	$.cookie('id', data.data[0].id);
 }
-function delCookis(){
-	var params = {
+function delCookie(){
+	let params = {
 		"key": $.cookie('key')
-	}
+	};
 	$.cookie('key', "");
 	$.cookie('name', "");
 	$.cookie('phone', "");
@@ -24,9 +24,9 @@ function delCookis(){
 	});
 }
 function judgeKey(){
-	var params = {
+	let params = {
 		"key": $.cookie('key')
-	}
+	};
 	$.ajax({
 		cache: false,
 		url: url0 + "/users/select/key",
@@ -35,7 +35,7 @@ function judgeKey(){
 		contentType: 'application/json;charset=UTF-8',
 		data: JSON.stringify(params),
 		success: function(res) {
-			if(res.key.length == 0){
+			if(parseInt(res.key.length) === 0){
 				alert("please log in first!");
 				location.href = ("login.html");
 			}

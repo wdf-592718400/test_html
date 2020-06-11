@@ -1,6 +1,6 @@
 judgeKey();
 $("#header h1").html("welcome " + $.cookie('name'));
 function exit(){
-	delCookis();
+    delCookie();
 	location.href = "login.html";
 }

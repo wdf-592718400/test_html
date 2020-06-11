@@ -4,7 +4,7 @@ function signIn() {
 	var params = {
 		"phone": phone,
 		"password": password
-	}
+	};
 	if(phone == "" || password == "") {
 		alert("phone or password is empty!");
 		return;
@@ -18,7 +18,7 @@ function signIn() {
 		success: function(res) {
 			if(res.data.length == 0) {
 				alert("phone or password is wrong!");
-				return;
+				return 0;
 			}
 			setCookie(res);
 			location.href = ("welcome.html");
