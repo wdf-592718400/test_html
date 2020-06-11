@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		<style type="text/css">
+			#signUp, #back{
+				width: 30%;
+				height: 20px;
+				margin: 30px 30px;
+				font-size: 14px;
+				font-weight: 300;
+			}
+		</style>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<body>
+		<div id="msg">
+			<h1>sing up</h1>
+			<span>name:<span style="opacity: 0;">aaaaa</span></span>
+			<input type="text" id="name"/>
+			<span>phone:<span style="opacity: 0;">aaaa</span></span>
+			<input type="text" id="phone"/>
+			<span>password:<span style="opacity: 0;">a</span></span>
+			<input type="password" id="password"/>
+			<input type="button" id="back" value="back" onclick="javascript :history.back(-1);"/>
+			<input type="button" id="signUp" value="sign up" onclick="signUp();"/>
+		</div>
+	</body>
+	<script src="js/jquery/jquery-3.4.1.js"></script>
+	<script src="js/jquery/jquery.cookie.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/signUp.js"></script>
+	<script src="js/onclick.js"></script>
+</html>

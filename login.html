@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test</title>
+		<style type="text/css">
+			#signIn, #signUp, #forgetPassword{
+				width: 30%;
+				height: 30px;
+				margin: 15px auto;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<body>
+		<div id="msg">
+			<h1>sing in</h1>
+			<span>phone:<span style="opacity: 0;">aaaa</span></span>
+			<input type="text" id="phone"/>
+			<span>password:<span style="opacity: 0;">a</span></span>
+			<input type="password" id="password"/>
+			<div class="container">
+			<div id="captcha" style="position: relative"></div>
+			</div>
+			<input type="button" id="signIn" value="sing in" onclick="signIn();" disabled="disabled"/>
+			<input type="button" id="signUp" value="sign up" onclick="location.href = ('signUp.html');"/>
+			<input type="button" id="forgetPassword" value="forget password" onclick="location.href = ('forgetPassword.html');"/>
+		</div>
+	</body>
+	<script src="js/jquery/jquery-3.4.1.js"></script>
+	<script src="js/jquery/jquery.cookie.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/captcha.js"></script>
+	<script src="js/onclick.js"></script>
+	
+</html>	
