@@ -11,7 +11,7 @@
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
         <div class="layui-logo">Layout</div>
-        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <!-- 头部 -->
         <ul class="layui-nav layui-layout-left">
             <li class="layui-nav-item"><a href="">Controller</a></li>
             <li class="layui-nav-item"><a href="">Debug</a></li>
@@ -42,7 +42,7 @@
 
     <div class="layui-side layui-bg-black">
         <div class="layui-side-scroll">
-            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <!-- 左侧导航 -->
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 <li class="layui-nav-item">
                     <a class="" href="javascript:;">title A</a>
@@ -80,16 +80,6 @@
 <script src="js/jquery/jquery.cookie.js"></script>
 <script src="js/public.js"></script>
 <script src="js/onclick.js"></script>
-<script>
-    judgeKey();
-    $("#user_name").html($.cookie('name'));
-    layui.use('element', function(){
-        var element = layui.element;
-    });
-    function signOut() {
-        delCookie();
-        location.href = "login.html";
-    }
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>
