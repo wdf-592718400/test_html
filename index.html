@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>wdf.com</title>
     <link rel="stylesheet" href="layui/css/layui.css">
 </head>
 
@@ -13,7 +13,7 @@
         <div class="layui-logo">Layout</div>
         <!-- 头部 -->
         <ul class="layui-nav layui-layout-left">
-            <li class="layui-nav-item"><a href="">Controller</a></li>
+            <li class="layui-nav-item"><a onclick="test();">Controller</a></li>
             <li class="layui-nav-item"><a href="">Debug</a></li>
             <li class="layui-nav-item"><a href="">Users</a></li>
             <li class="layui-nav-item">
@@ -32,8 +32,8 @@
                     <span id="user_name">wdf</span>
                 </a>
                 <dl class="layui-nav-child">
-                    <dd><a href="">basic information</a></dd>
-                    <dd><a href="">Security Settings</a></dd>
+                    <dd><a onclick="ownInformation();">own information</a></dd>
+                    <dd><a onclick="settings();">Settings</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item"><a onclick="signOut();">sign out</a></li>
@@ -68,11 +68,14 @@
     </div>
 
     <div class="layui-body">
-        <iframe frameborder="0" style="width: 100%; height: 100%;" src="welcome.html"></iframe>
+        <iframe id="body0" frameborder="0" style="width: 100%; height: 100%;" src="welcome.html"></iframe>
     </div>
 
     <div class="layui-footer">
-        <p style="text-align: right">Author:WuDongfei</p>
+        <a href="https://github.com/wdf-592718400/test_html.git">HTML Code：https://github.com/wdf-592718400/test_html.git</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/wdf-592718400/test.git">JAVA Code：https://github.com/wdf-592718400/test.git</a>
+        <p style="text-align: right; float: right;">Author:WuDongfei</p>
     </div>
 </div>
 <script src="js/onclick.js"></script>
