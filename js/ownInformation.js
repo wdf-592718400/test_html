@@ -1,5 +1,3 @@
-console.log($.cookie("id"));
-
 var params = {
     "id": $.cookie("id")
 };
