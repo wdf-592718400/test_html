@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">Layout</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">Controller</a></li>
+            <li class="layui-nav-item"><a href="">Debug</a></li>
+            <li class="layui-nav-item"><a href="">Users</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">Others</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">email</a></dd>
+                    <dd><a href="">message</a></dd>
+                    <dd><a href="">purview</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    <span id="user_name">wdf</span>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">basic information</a></dd>
+                    <dd><a href="">Security Settings</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a onclick="signOut();">sign out</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item">
+                    <a class="" href="javascript:;">title A</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">List 1</a></dd>
+                        <dd><a href="javascript:;">List 2</a></dd>
+                        <dd><a href="javascript:;">List 3</a></dd>
+                        <dd><a href="javascript:;">List 4</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">title B</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">List 1</a></dd>
+                        <dd><a href="javascript:;">List 2</a></dd>
+                        <dd><a href="">List 3</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">title C</a></li>
+                <li class="layui-nav-item"><a href="">title D</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <iframe frameborder="0" style="width: 100%; height: 100%;" src="welcome.html"></iframe>
+    </div>
+
+    <div class="layui-footer">
+        wdf-8888888
+    </div>
+</div>
+<script src="layui/layui.js"></script>
+<script src="js/jquery/jquery-3.4.1.js"></script>
+<script src="js/jquery/jquery.cookie.js"></script>
+<script src="js/public.js"></script>
+<script src="js/captcha.js"></script>
+<script src="js/onclick.js"></script>
+<script>
+    judgeKey();
+    $("#user_name").html($.cookie('name'));
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+    function signOut() {
+        delCookie();
+        location.href = "login.html";
+    }
+</script>
+</body>
+</html>

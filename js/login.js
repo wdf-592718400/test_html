@@ -23,7 +23,7 @@ function signIn() {
 				return 0;
 			}
 			setCookie(res);
-			location.href = ("welcome.html");
+			location.href = ("index.html");
 		}
 	});
 }
