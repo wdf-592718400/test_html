@@ -41,7 +41,7 @@
 	}
 
 	function getRandomImg() {
-		return 'img/jpg/' + getRandomNumberByRange(0, 20) + '.jpg'
+		return "img/jpg/" + getRandomNumberByRange(0, 20) + ".png"
 	}
 
 	function draw(ctx, operation, x, y) {
