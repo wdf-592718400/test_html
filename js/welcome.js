@@ -1,1 +1,1 @@
-$("#header h1").html("welcome " + $.cookie('name'));
+$("#header h1").html("welcome ");
