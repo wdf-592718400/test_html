@@ -223,6 +223,7 @@
 		}
 
 		reset() {
+            $("#signIn").attr({"disabled": "disabled;"});
 			this.sliderContainer.className = 'sliderContainer'
 			this.slider.style.left = 0
 			this.block.style.left = 0
@@ -233,6 +234,7 @@
 		}
 
 	}
+
 
 	window.jigsaw = {
 		init: function(element, success, fail) {

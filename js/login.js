@@ -7,6 +7,7 @@ function signIn() {
 	};
 	if(phone == "" || password == "") {
 		alert("phone or password is empty!");
+        location.href = ("login.html");
 		return;
 	}
 	$.ajax({
@@ -18,6 +19,7 @@ function signIn() {
 		success: function(res) {
 			if(res.data.length == 0) {
 				alert("phone or password is wrong!");
+                location.href = ("login.html");
 				return 0;
 			}
 			setCookie(res);

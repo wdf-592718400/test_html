@@ -26,6 +26,8 @@ function next(){
 			$("#next").val("reset");
 			$("#next").attr({"onclick": "reset();"});
 			$("#back").attr({"onclick": "back();"});
+            $("#password0 input").attr({"style": "width:auto;"});
+            $("#password1 input").attr({"style": "width:auto;"});
 		}
 	});
 }
