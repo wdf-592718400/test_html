@@ -1,7 +1,7 @@
 
-body{
-	 background: url("../gif/wdf.gif");
-	 background-size: cover;
+html{
+	 background: url("../gif/www.gif");
+	 /*background-size: cover;*/
  }
 
 #msg {
