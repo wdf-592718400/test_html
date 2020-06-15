@@ -1,7 +1,8 @@
 
 body{
-	background: bisque;
-}
+	 background: url("../gif/wdf.gif");
+	 background-size: cover;
+ }
 
 #msg {
 	width: 330px;
